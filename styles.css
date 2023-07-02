@@ -14,24 +14,130 @@
 
   html {
     background-image: url(./anastase-maragos-DHsdSeCpjRU-unsplash.jpg);
-    background-size: 100vw;
-    background-position: left;
+    background-size: cover;
+    background-position: center;
   }
 
-  /* body {
-    display: block;
-    margin: auto;
+  body {
+    font-family: Poppins, sans-serif;
+  }
 
-  } */
+p {
+  font-weight: bold;
+  color: orange;
+  background-color: black;
+  opacity: 0.75;
+  margin: 0;
+  }
 
+  h1 {
+    font-family: 'Orbitron', 'sans-serif';
+    font-size: 3rem;
+    color: orange;
+    background-color: black;
+    opacity: 0.75;
+    margin: 0;
+  }
 
   form {
     display: block;
-    margin: auto;
+    margin: 2em auto;
     padding: 2em 2em;
-    text-align: justify;
-    width: 60%;
+    text-align: left;
+    width: 65%;
     background-color: rebeccapurple;
     opacity: 0.75;
-    
+    border-radius: 0.5em;
   }
+
+  input,
+  textarea {
+    width: 100%;
+    font-family: Raleway, sans-serif;
+    margin-bottom: 0.75em;
+  }
+
+  select {
+    font-family: Raleway, sans-serif;
+    margin-bottom: 0.75em;
+    cursor: pointer;
+  }
+
+  /* #dob,
+  #startdate {
+    cursor: pointer;
+  } */
+
+  /*Changes the cursor over the calendar icon */
+  input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+  }
+
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+
+  #special-label {
+    text-align: justify;
+  }
+
+  /*************************************************************/
+  /*I set the width for the input boxes that don't need to span across the whole form width  */
+  input.location,
+  input.activities {
+    width: fit-content;
+    cursor: pointer;
+  }
+
+  #number {
+    width: 25%;
+  }
+
+  /*I adjust the width so that the checkbox and label of Terms and Conditions display on the same line*/
+  #tcs-label {
+    width: auto;
+    cursor: pointer;
+  }
+
+  /*************************************************************/
+
+  #dropdown{
+    margin-bottom: 0.75em;
+  }
+
+  #columns {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 0.5em 0;
+  }
+
+  .special {
+    text-align: justify;
+  }
+
+  .tcs {
+    font-size: 0.85rem;
+    color:chartreuse;
+    font-weight: bold;
+  }
+
+  #submit {
+    height: 2.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: chartreuse;
+    opacity: 0.75;
+    color: black;
+    border: 2px solid purple;
+    border-radius: 0;
+    cursor: pointer;
+  }
+
+  #submit:hover {
+    background-color: orange;
+  }
+
+
+
