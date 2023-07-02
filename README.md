@@ -6,7 +6,8 @@ This is the freeCodeCamp project *"Build a Survey Form"* -
 which has to meet specific specifications. 
 
 I have created the Member Registration Form of the imaginary fitness club 
-called Marvel Fitness, which includes all the features of the survey form.
+called Marvel Fitness, which includes all the features of the survey form project specs.
+Background Photo by [Anastase Maragos](href="https://unsplash.com/@visualsbyroyalz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText") on [Unsplash]( href="https://unsplash.com/photos/DHsdSeCpjRU?utm_source=unsplash&utm_medium=referral&).
 
 I have completed most of the HTML and CSS and currently working on the responsive features.
 
