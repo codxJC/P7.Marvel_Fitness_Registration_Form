@@ -10,7 +10,7 @@ called Marvel Fitness, which includes all the features of the survey form.
 
 I have completed the draft HTML version and working on the CSS file.
 
-[Preview](https://raw.githack.com/codxJC/P7.Marvel_Fitness_Registration_Form/main/index.html)
+[Live Preview](https://raw.githack.com/codxJC/P7.Marvel_Fitness_Registration_Form/master/index.html)
 
 :)
   
