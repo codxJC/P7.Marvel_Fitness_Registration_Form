@@ -6,120 +6,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Oswald&family=Poppins&family=Raleway&display=swap"
+        rel="stylesheet">
     <title>Marvel Fitness Survey Form</title>
 </head>
 
 <body>
-    <h1 id="title">Marvel Finess Registration Form</h1>
-    <p id="description">Please complete the registration form to start your fitness and wellness journey with us today!
+    <h1 id="title">Marvel Fitness Registration Form</h1>
+    <p id="description">Complete the registration form and start your fitness journey today!
         Our facilities are accessible 24/7.</p>
 
     <div id="form">
-    <form id="survey-form" action="href=" method="post">
+        <form id="survey-form" action="href=#" method="post">
 
-        <!-- Club Location Section -->
+            <!-- Club Location Section -->
 
-        <!-- <input> is used to enter text that is just a single line -->
-        <label for="location-label">Choose your club:</label><br>
-        <input id="location" type="radio" name="location" value="Glyfada">Glyfada <br>
-        <input id="location" type="radio" name="location" value="Kifisia">Kifisia <br>
-        <input id="location" type="radio" name="location" value="Piraeus">Piraeus<br> <br>
+            <!-- <input> is used to enter text that is just a single line -->
+            <fieldset>
+            <label>Choose your base club:</label><br>
+            <label>
+                <input class="location" type="radio" name="location" value="Glyfada">Glyfada<br>
+            </label>
+            <label>
+                <input class="location" type="radio" name="location" value="Kifisia">Kifisia<br>
+            </label>
+            <label>
+                <input class="location" type="radio" name="location" value="Piraeus">Piraeus
+            </label><br>
+            <label>
+                <input class="location" type="radio" name="location" value="Thessaloniki">Thessaloniki
+            </label><br>
+            </fieldset>
+            <!-- Email Section -->
 
-        <!-- Email Section -->
+            <label id="email-label">Email:</label><br>
+            <input type="email" name="email" id="email" value="" placeholder="e.g. johndoe@example.com" required> <br>
 
-        <label id="email-label">Email:</label><br>
-        <input type="email" name="email" id="email" value="" placeholder="e.g. johndoe@example.com" required> <br>
+            <!-- Member Details Section -->
 
-        <!-- Member Details Section -->
-
-        <label id="name-label">First Name: </label><br>
-        <input type="text" name="firstname" id="name" placeholder="Enter your first name" required><br>
-        
-        <label id="lastname-label">Last Name:</label><br>
-        <input type="text" name="lastname" id="last-name" placeholder="Enter your last name" required><br>
-
-        <label>Telephone: </label><br>
-        <input type="number" name="phone" id="phone-number" placeholder="Enter your phone number" required><br>
-        
-
-        <label>DOB:</label><br>
-            <input type="date" name="DOB" required><br>
-
-        <label id="gender-label">Gender:</label><br>
+            <label id="name-label">First Name: </label><br>
+            <input type="text" name="firstname" id="name" placeholder="Enter your first name" required><br>
+            <label id="lastname-label">Last Name:</label><br>
+            <input type="text" name="lastname" id="last-name" placeholder="Enter your last name" required><br>
+            <label>Telephone: </label><br>
+            <input type="number" name="phone" id="phone-number" placeholder="Enter your phone number" required><br>
+            <label>Date of birth:</label><br>
+            <input type="date" name="DOB" id="dob" required><br>
+            <label id="gender-label">Gender:</label><br>
             <select name="gender" id="dropdown" required>
-                <option placeholder="Please Select">Please select</option>
+                <option placeholder="Please Select">Select</option>
                 <option value="Female">Female</option>
                 <option value="Male">Male</option>
                 <option value="Other">Other</option>
                 <option value="not-to-specify">Prefer not to specify</option>
             </select><br>
-        
 
-        <label id="start-label">When would you like your membership to start:</label><br>
-        <input type="date" name="startdate">
+            <label id="start-label">Membership start date:</label><br>
+            <input type="date" name="startdate" id="startdate">
             <br>
-        
 
-        <!-- Activities/Services section -->
+            <!-- Activities/Services section -->
+            <!-- Added divs to split the checkbox list in two columns -->
+            <fieldset>
+            <label id="services-label">Which services/activities are you interersted in:<label><br>
+                <div id="columns">
+                <div id="activities-col">
+                    <input class="activities" type="checkbox" name="activity" value="pt">Personal training<br>
+                    <input class="activities" type="checkbox" name="activity" value="online-pt">Online personal training<br>
+                    <input class="activities" type="checkbox" name="activity" value="bootcamps">Bootcamps<br>
+                    <input class="activities" type="checkbox" name="activity" value="aerobics">Class Aerobics<br>
+                    <input class="activities" type="checkbox" name="activity" value="functional">Functional Training<br>
+                    <input class="activities" type="checkbox" name="activity" value="flexibility">Flexibility<br>
+                    <input class="activities" type="checkbox" name="activity" value="natal">Pre or post natal fitness<br>
+                </div>
+                    <div id="activities-col">
+                    <input class="activities" type="checkbox" name="activity" value="genx">Gen-X Fitness<br>
+                    <input class="activities" type="checkbox" name="activity" value="total-transformation">Total Transformation<br>
+                    <input class="activities" type="checkbox" name="activity" value="sauna">Sauna<br>
+                    <input class="activities" type="checkbox" name="activity" value="physio">Physiotherapy<br>
+                    <input class="activities" type="checkbox" name="activity" value="pool">Swimming pool<br>
+                    <input class="activities" type="checkbox" name="activity" value="nutrition">Dietitian<br>
+                    <input class="activities" type="checkbox" name="activity" value="spa">Day spa<br>
+                </div>
+            </div>
+            </fieldset>
 
-        <label id="services-label">Which services/activities are you interersted in:<label><br>
-            <input type="checkbox" name="activity" value="pt">Personal training<br>
-            <input type="checkbox" name="activity" value="online-pt">Online personal training<br>
-            <input type="checkbox" name="activity" value="bootcamps">Bootcamps<br>
-            <input type="checkbox" name="activity" value="aerobics">Class Aerobics<br>
-            <input type="checkbox" name="activity" value="functional">Functional Training<br>
-            <input type="checkbox" name="activity" value="flexibility">Flexibility<br>
-            <input type="checkbox" name="activity" value="natal">Pre or post natal fitness<br>
-            <input type="checkbox" name="activity" value="genx">Gen X Fitness<br>
-            <input type="checkbox" name="activity" value="total-transformation">Total Transformation<br>
-            <input type="checkbox" name="activity" value="sauna">Sauna<br>
-            <input type="checkbox" name="activity" value="physio">Physiotherapy<br>
-            <input type="checkbox" name="activity" value="pool">Swimming pool<br>
-            <input type="checkbox" name="activity" 
-            value="nutrition">Dietitian<br>
-            <input type="checkbox" name="activity" 
-            value="spa">Day spa<br>
-            
+                    <!-- Activity level section -->
 
-                <!-- Activity level section -->
-
-                <label id="number-label">How many days per week do you exercise:</label><br>
-                <input type="number" name="days" id="number" min="0" max="7" placeholder="Choose" required> <br>
+                    <label id="number-label">How many days per week do you exercise:</label><br>
+                    <input type="number" name="days" id="number" min="0" max="7" placeholder="Choose 0 to 7" required> <br>
 
 
-                <!-- Special Population section -->
+                    <!-- Special Population section -->
 
-                <label id="specialpopulation-label">Our clubs provide customized programs for people with special
-                    conditions or disabilities. If you are
-                    interested to know more, describe below your special circumstances: <br>
-                    <textarea name="" id="" cols="60" rows="5"></textarea> <br>
-                </label><br>
+                    <div class="special">
+                    <label id="special-label">Our clubs provide customized programs for people with special
+                        conditions or disabilities. If you are
+                        interested to book a free consultation, describe briefly your special circumstances below: <br>
+                        <textarea name="special" id="special" rows="4"></textarea> <br>
+                    </label>
+                    </div>
 
-                <!-- Next of kin section -->
+                    <!-- Next of kin section -->
 
-                <label id="nextofkin-label">Next of kin information:</label><br>
+                    <label id="nextofkin-label">Next of kin information:</label><br>
                     Full Name:<br> <input type="text" name="kin-name" placeholder="Next of kin full name" required><br>
-                    Phone-number:<br> <input type="number" name="kin-phone" id="kin-number" placeholder="Next of kin phone number" required><br>
+                    Phone-number:<br> <input type="number" name="kin-phone" id="kin-number"
+                        placeholder="Next of kin phone number" required><br>
                     Address:<br> <input type="text" name="kin-address" placeholder="Next of kin address" required><br>
-                <br>
+                    <br>
 
-                <!-- Terms & Conditions section -->
+                    <!-- Terms & Conditions section -->
+                    <div class="tcs">
+                    <input type="checkbox" name="terms" value="t&cs" id="tcs-label" required>
+                    <label for="tcs-label">I have read and I agree with the <a href="#">Terms and Conditions</a> of
+                        Marvel Fitness.</label>
+        
+                    <br>
+                    </div>
+                    <!-- Submit section -->
 
-                <input type="checkbox" name="terms" value="t&cs">
-                <label for="t&cs-label">I have read and I agree with the <a href="#">Terms and Conditions</a> of
-                    Marvel Fitness.</label>
-                <br>
-
-                <!-- Submit section -->
-
-                <input type="submit" id="submit">
-    </form>
-</div>
-<footer>
-    <p>
-        Marvel Fitness &copy 2023 All rights reserved 
-    </p> 
-</footer>
+                    <input type="submit" id="submit" value="Submit Form">
+        </form>
+    </div>
+    <footer>
+        <p>
+            Marvel Fitness &copy 2023 All rights reserved
+        </p>
+    </footer>
 </body>
 
 </html>
