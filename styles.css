@@ -20,6 +20,7 @@
 
   body {
     font-family: Poppins, sans-serif;
+    margin: 0;
   }
 
 p {
@@ -62,11 +63,6 @@ p {
     margin-bottom: 0.75em;
     cursor: pointer;
   }
-
-  /* #dob,
-  #startdate {
-    cursor: pointer;
-  } */
 
   /*Changes the cursor over the calendar icon */
   input::-webkit-calendar-picker-indicator {
@@ -137,6 +133,85 @@ p {
 
   #submit:hover {
     background-color: orange;
+  }
+
+  /**************************************/
+  /***** Mobile Devices Up to 425px *****/
+  /**************************************/
+
+  @media (max-width: 425px) {        
+    :root {                          
+      font-size: 0.875em;            
+    } 
+
+    h1 {
+      font-size: 2rem;
+      padding: 0 1em;
+    }
+
+    p {
+      padding: 0 1em;
+      text-align: center;
+    }
+
+    form {
+      padding: 2em 1em;
+      width: 80%;
+    }
+    
+    #columns {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    input.location,
+    input.activities {
+      width: 50%;
+
+    }
+
+    #number {
+      width: 50%;
+    }
+
+  }
+
+  /*************************************/
+  /***** Tablet Devices up to 768px*****/
+  /*************************************/
+  
+  @media (min-width: 426px) and (max-width: 768px) {        
+    :root {                          
+      font-size: 0.875em;            
+    } 
+
+    p {
+      padding: 0 1em;
+      text-align: center;
+    }
+
+    #columns {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    #number {
+      width: 50%;
+    }
+
+  }
+  /******************************************************/
+  /***** Larger than 768px and up to 1024px Devices *****/
+  /******************************************************/
+  @media (min-width: 769px) and (max-width: 1024px) {       
+    :root {                          
+      font-size: 1.1m;                
+    } 
+
+    #columns {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
 
 
