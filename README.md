@@ -3,7 +3,7 @@
 #### PROJECT SCOPE
 
 This is the freeCodeCamp project *"Build a Survey Form"* - 
-which has to meet specific specifications. 
+which has to meet specific requirements. 
 
 I have created the Member Registration Form of the imaginary fitness club 
 called Marvel Fitness, which includes all the features of the survey form project specs.<br>
