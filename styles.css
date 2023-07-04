@@ -166,6 +166,15 @@ p {
     }
   }
 
+  /*******************************************************/
+  /***** To adjust the checkbox columns where the layout changes naturally to two columns  - Larger than 592px *****/
+  /*******************************************************/
+  @media (min-width: 37em) {
+    #columns {
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      }
+    }
   /********************************************************/
   /***** Tablet Devices Landscape - Larger than 768px *****/
   /********************************************************/
@@ -173,11 +182,6 @@ p {
     form {
       width: 70%;
     }
-
-    #columns {
-      flex-wrap: nowrap;
-      justify-content: space-around;
-      }
   }
 
   /********************************************************/
