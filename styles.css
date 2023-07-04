@@ -33,6 +33,11 @@ p {
   text-align: center;
   }
 
+  /* Hides the long description for mobile devices*/
+  #description {
+    display: none;
+  }
+
   h1 {
     font-family: 'Orbitron', 'sans-serif';
     font-size: 2rem;
@@ -48,7 +53,7 @@ p {
     margin: 2em auto;
     padding: 2em 1em;
     text-align: left;
-    width: 80%; 
+    width: 85%; 
     background-color: rebeccapurple;
     opacity: 0.75;
     border-radius: 0.5em;
@@ -141,11 +146,19 @@ p {
   /*******************************************************/
   /***** Tablet Devices Portrait - Larger than 480px *****/
   /*******************************************************/
-
   @media (min-width: 30em) {        
     :root {                          
       font-size: 1rem;            
     } 
+
+    #description,
+    #title {
+      display: block;
+    }
+
+    #mobile-description {
+      display: none;
+    }
 
     form {
       width: 75%;
@@ -156,41 +169,23 @@ p {
   /********************************************************/
   /***** Tablet Devices Landscape - Larger than 768px *****/
   /********************************************************/
-
   @media (min-width: 48em) {       
-    :root {                          
-      font-size: 1.1rem;                
-    } 
-
     form {
       width: 70%;
     }
 
     #columns {
-      /* flex-wrap: nowrap; */
+      flex-wrap: nowrap;
       justify-content: space-around;
-    }
+      }
   }
 
   /********************************************************/
   /********** Laptop Devices - Larger than 1024px**********/
   /********************************************************/
-  @media (min-width: 64em) {       
-    :root {                          
-      font-size: 1.2rem;                
-    } 
-
+  @media (min-width: 64em) { 
     form {
       padding: 2em 1.5em;
-      width: 50%
+      width: 60%
     }
-  }
-
-  /*********************************************************/
-  /********** Desktop Devices - Larger than 1600px**********/
-  /*********************************************************/ 
-  @media (min-width: 100em) {       
-    :root {                          
-      font-size: 1.3rem;                
-    } 
   }
