@@ -1,6 +1,6 @@
 :root {
     box-sizing: border-box;  /*Applies border box sizing to the root element*/ 
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 1.5;
     text-align: center;
     color: white;
@@ -29,23 +29,26 @@ p {
   background-color: black;
   opacity: 0.75;
   margin: 0;
+  padding: 0 1em;
+  text-align: center;
   }
 
   h1 {
     font-family: 'Orbitron', 'sans-serif';
-    font-size: 3rem;
+    font-size: 2rem;
     color: orange;
     background-color: black;
     opacity: 0.75;
     margin: 0;
+    padding: 0 1em;
   }
 
   form {
     display: block;
     margin: 2em auto;
-    padding: 2em 2em;
+    padding: 2em 1em;
     text-align: left;
-    width: 40%;
+    width: 80%; 
     background-color: rebeccapurple;
     opacity: 0.75;
     border-radius: 0.5em;
@@ -82,12 +85,12 @@ p {
   /*I set the width for the input boxes that don't need to span across the whole form width  */
   input.location,
   input.activities {
-    width: fit-content;
+    width: auto;
     cursor: pointer;
   }
 
   #number {
-    width: 25%;
+    width: 50%;
   }
 
   /*I adjust the width so that the checkbox and label of Terms and Conditions display on the same line*/
@@ -104,8 +107,8 @@ p {
 
   #columns {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     margin: 0.5em 0;
   }
 
@@ -135,101 +138,46 @@ p {
     background-color: orange;
   }
 
-  /**************************************/
-  /***** Mobile Devices Up to 425px *****/
-  /**************************************/
+  /*******************************************************/
+  /***** Tablet Devices Portrait - Larger than 480px *****/
+  /*******************************************************/
 
-  @media (max-width: 425px) {        
+  @media (min-width: 30em) {        
     :root {                          
-      font-size: 0.875em;            
+      font-size: 1rem;            
     } 
 
-    h1 {
-      font-size: 2rem;
-      padding: 0 1em;
-    }
-
-    p {
-      padding: 0 1em;
-      text-align: center;
-    }
-
     form {
-      padding: 2em 1em;
-      width: 80%;
+      width: 75%;
+      padding: 2em 1.5em;
     }
-    
-    #columns {
-      flex-wrap: wrap;
-      justify-content: flex-start;
-    }
-
-    input.location,
-    input.activities {
-      width: 50%;
-
-    }
-
-    #number {
-      width: 50%;
-    }
-
   }
 
-  /*************************************/
-  /***** Tablet Devices up to 768px*****/
-  /*************************************/
-  
-  @media (min-width: 426px) and (max-width: 768px) {        
+  /********************************************************/
+  /***** Tablet Devices Landscape - Larger than 768px *****/
+  /********************************************************/
+
+  @media (min-width: 48em) {       
     :root {                          
-      font-size: 0.875em;            
-    } 
-
-    p {
-      padding: 0 1em;
-      text-align: center;
-    }
-
-    form {
-      padding: 2em 1.5em;
-      width: 80%;
-    }
-
-    #columns {
-      flex-wrap: wrap;
-      justify-content: flex-start;
-    }
-
-    #number {
-      width: 50%;
-    }
-
-  }
-  /******************************************************/
-  /***** Larger than 768px and up to 1024px Devices *****/
-  /******************************************************/
-  @media (min-width: 769px) and (max-width: 1024px) {       
-    :root {                          
-      font-size: 1.1m;                
+      font-size: 1.1rem;                
     } 
 
     form {
-      padding: 2em 1.5em;
-      width: 65%;
+      width: 70%;
     }
 
     #columns {
-      flex-wrap: wrap;
+      /* flex-wrap: nowrap; */
       justify-content: space-around;
     }
   }
 
-    /************************************/
-  /***** Larger than 1024px Devices *****/
-  /**************************************/
-  @media (min-width: 1025px) {       
+  /********************************************************/
+  /********** Laptop Devices - Larger than 1024px**********/
+  /********************************************************/
+  @media (min-width: 64em) {       
     :root {                          
-      font-size: 1.1m;                
+      font-size: 1.2rem;                
     } 
 
     form {
@@ -238,4 +186,11 @@ p {
     }
   }
 
-
+  /*********************************************************/
+  /********** Desktop Devices - Larger than 1600px**********/
+  /*********************************************************/ 
+  @media (min-width: 100em) {       
+    :root {                          
+      font-size: 1.3rem;                
+    } 
+  }
