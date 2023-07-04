@@ -87,7 +87,8 @@ p {
   }
 
   /*************************************************************/
-  /*I set the width for the input boxes that don't need to span across the whole form width  */
+  /*I set the width for the input boxes that don't need to span 
+  across the whole form width  */
   input.location,
   input.activities {
     width: auto;
@@ -98,7 +99,8 @@ p {
     width: 50%;
   }
 
-  /*I adjust the width so that the checkbox and label of Terms and Conditions display on the same line*/
+  /*I adjust the width so that the checkbox and label of Terms 
+  and Conditions display on the same line*/
   #tcs-label {
     width: auto;
     cursor: pointer;
@@ -167,7 +169,8 @@ p {
   }
 
   /*******************************************************/
-  /***** To adjust the checkbox columns where the layout changes naturally to two columns  - Larger than 592px *****/
+  /******* To adjust the checkbox sections where the layout 
+  changes to two columns - Larger than 592px *************/
   /*******************************************************/
   @media (min-width: 37em) {
     #columns {
@@ -189,7 +192,16 @@ p {
   /********************************************************/
   @media (min-width: 64em) { 
     form {
-      padding: 2em 1.5em;
-      width: 60%
+      width: 60%;
+    }
+  }
+
+  /********************************************************/
+  /********** Large screens - Larger than 1600px **********/
+  /********************************************************/
+
+  @media (min-width: 100em) { 
+    form {
+      width: 40%;
     }
   }
