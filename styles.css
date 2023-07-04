@@ -45,7 +45,7 @@ p {
     margin: 2em auto;
     padding: 2em 2em;
     text-align: left;
-    width: 50%;
+    width: 40%;
     background-color: rebeccapurple;
     opacity: 0.75;
     border-radius: 0.5em;
@@ -213,11 +213,29 @@ p {
       font-size: 1.1m;                
     } 
 
+    form {
+      padding: 2em 1.5em;
+      width: 65%;
+    }
+
     #columns {
       flex-wrap: wrap;
       justify-content: space-around;
     }
   }
 
+    /************************************/
+  /***** Larger than 1024px Devices *****/
+  /**************************************/
+  @media (min-width: 1025px) {       
+    :root {                          
+      font-size: 1.1m;                
+    } 
+
+    form {
+      padding: 2em 1.5em;
+      width: 50%
+    }
+  }
 
 
