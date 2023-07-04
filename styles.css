@@ -15,7 +15,7 @@
   html {
     background-image: url(./anastase-maragos-DHsdSeCpjRU-unsplash.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: 50% 25%;
   }
 
   body {
@@ -45,7 +45,7 @@ p {
     margin: 2em auto;
     padding: 2em 2em;
     text-align: left;
-    width: 65%;
+    width: 50%;
     background-color: rebeccapurple;
     opacity: 0.75;
     border-radius: 0.5em;
