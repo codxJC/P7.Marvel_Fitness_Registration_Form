@@ -144,9 +144,8 @@ p {
   #submit:hover {
     background-color: orange;
   }
-
   /*******************************************************/
-  /***** Tablet Devices Portrait - Larger than 480px *****/
+  /********* Tablet Devices - Larger than 480px **********/
   /*******************************************************/
   @media (min-width: 30em) {        
     :root {                          
@@ -158,6 +157,7 @@ p {
       display: block;
     }
 
+    /*Hides the short description under the main heading*/
     #mobile-description {
       display: none;
     }
@@ -167,10 +167,9 @@ p {
       padding: 2em 1.5em;
     }
   }
-
   /*******************************************************/
-  /******* To adjust the checkbox sections where the layout 
-  changes to two columns - Larger than 592px *************/
+  /***** To adjust the checkboxes section where the layout 
+  changes to two columns - Screens larger than 592px *****/
   /*******************************************************/
   @media (min-width: 37em) {
     #columns {
@@ -186,7 +185,6 @@ p {
       width: 70%;
     }
   }
-
   /********************************************************/
   /********** Laptop Devices - Larger than 1024px**********/
   /********************************************************/
@@ -195,7 +193,6 @@ p {
       width: 60%;
     }
   }
-
   /********************************************************/
   /********** Large screens - Larger than 1600px **********/
   /********************************************************/
