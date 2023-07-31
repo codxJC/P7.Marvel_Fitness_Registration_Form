@@ -59,6 +59,10 @@ p {
     border-radius: 0.5em;
   }
 
+  label {
+    display: block;
+  }
+
   input,
   textarea {
     width: 100%;
