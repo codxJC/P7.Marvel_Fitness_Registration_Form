@@ -28,31 +28,31 @@
             <!-- <input> is used to enter text that is just a single line -->
             <fieldset>
             <legend>Choose your base club:</legend>
-            <label>
-                <input class="location" type="radio" name="location" value="Glyfada">Glyfada
+            <label for="Glyfada">
+                <input id="Glyfada" class="location" type="radio" name="location" value="Glyfada">Glyfada
             </label>
-            <label>
-                <input class="location" type="radio" name="location" value="Kifisia">Kifisia
+            <label for="kifisia">
+                <input id="kifisia" class="location" type="radio" name="location" value="Kifisia">Kifisia
             </label>
-            <label>
-                <input class="location" type="radio" name="location" value="Piraeus">Piraeus
+            <label for="piraeus">
+                <input id="piraeus" class="location" type="radio" name="location" value="Piraeus">Piraeus
             </label>
-            <label>
-                <input class="location" type="radio" name="location" value="Thessaloniki">Thessaloniki
+            <label for="thessaloniki">
+                <input id="thessaloniki" class="location" type="radio" name="location" value="Thessaloniki">Thessaloniki
             </label>
             </fieldset>
 
             <!-- Email Section -->
 
-            <label id="email-label">Email:</label>
+            <label for="email" id="email-label">Email:</label>
             <input type="email" name="email" id="email" value="" placeholder="e.g. johndoe@example.com" required>
 
             <!-- Member Details Section -->
 
-            <label id="name-label">First name: </label>
+            <label for="name" id="name-label">First name: </label>
             <input type="text" name="firstname" id="name" placeholder="Enter your first name" required>
 
-            <label id="lastname-label">Last name:</label>
+            <label for="last-name" id="lastname-label">Last name:</label>
             <input type="text" name="lastname" id="last-name" placeholder="Enter your last name" required>
 
             <label>Telephone: </label>
@@ -61,7 +61,7 @@
             <label>Date of birth:</label>
             <input type="date" name="DOB" id="dob" required>
             
-            <label id="gender-label">Gender:</label>
+            <label for="dropdown" id="gender-label">Gender:</label>
             <select name="gender" id="dropdown" required>
                 <option placeholder="Please Select">Select</option>
                 <option value="Female">Female</option>
@@ -70,7 +70,7 @@
                 <option value="not-to-specify">Prefer not to specify</option>
             </select>
 
-            <label id="start-label">Membership start date:</label>
+            <label for="startdate" id="start-label">Membership start date:</label>
             <input type="date" name="startdate" id="startdate">
 
             <!-- Activities/Services section -->
@@ -83,71 +83,71 @@
             <div id="columns">
                 <div id="activities-col">
                     <!-- The value is optional but it is best practice to include it. -->
-                    <input class="activities" id="pt" type="checkbox" name="activity" value="pt"> <label for="pt">Personal training</label>
+                    <label for="pt"><input class="activities" id="pt" type="checkbox" name="activity" value="pt"> Personal training</label>
                         
-                    <input class="activities" id="online-pt" type="checkbox" name="activity" value="online-pt"> <label for="online-pt">Online personal training</label>
+                    <label for="online-pt"><input class="activities" id="online-pt" type="checkbox" name="activity" value="online-pt"> Online personal training</label>
 
-                    <input class="activities" id="bootcamps" type="checkbox" name="activity" value="bootcamps"> <label for="bootcamps">Bootcamps</label>
+                    <label for="bootcamps"><input class="activities" id="bootcamps" type="checkbox" name="activity" value="bootcamps"> Bootcamps</label>
                     
-                    <input class="activities" id="aerobics" type="checkbox" name="activity" value="aerobics"><label for="aerobics">Class aerobics</label>
+                    <label for="aerobics"><input class="activities" id="aerobics" type="checkbox" name="activity" value="aerobics"> Class aerobics</label>
 
-                    <input class="activities" id="functional" type="checkbox" name="activity" value="functional"> <label for="functional">Functional training</label>
+                    <label for="functional"><input class="activities" id="functional" type="checkbox" name="activity" value="functional"> Functional training</label>
 
-                    <input class="activities" id="flexibility" type="checkbox" name="activity" value="flexibility"><label for="flexibility">Flexibility</label>
+                    <label for="flexibility"><input class="activities" id="flexibility" type="checkbox" name="activity" value="flexibility"> Flexibility</label>
 
-                    <input class="activities" id="natal" type="checkbox" name="activity" value="natal"><label for="natal">Pre or post natal fitness</label>
+                    <label for="natal"><input class="activities" id="natal" type="checkbox" name="activity" value="natal"> Pre or post natal fitness</label>
                 </div>
 
                 <div id="activities-col">
-                    <input class="activities" id="genx" type="checkbox" name="activity" value="genx"><label for="genx">Gen-X Fitness</label>
+                    <label for="genx"><input class="activities" id="genx" type="checkbox" name="activity" value="genx"> Gen-X Fitness</label>
 
-                    <input class="activities" id="total-transformation" type="checkbox" name="activity" value="total-transformation"><label for="total-transformation">Total transformation</label>
+                    <label for="total-transformation"><input class="activities" id="total-transformation" type="checkbox" name="activity" value="total-transformation"> Total transformation</label>
 
-                    <input class="activities" id="sauna" type="checkbox" name="activity" value="sauna"><label for="sauna">Sauna</label>
+                    <label for="sauna"><input class="activities" id="sauna" type="checkbox" name="activity" value="sauna"> Sauna</label>
 
-                    <input class="activities" id="physio" type="checkbox" name="activity" value="physio"><label for="physio">Physiotherapy</label>
+                    <label for="physio"><input class="activities" id="physio" type="checkbox" name="activity" value="physio"> Physiotherapy</label>
 
-                    <input class="activities" id="pool" type="checkbox" name="activity" value="pool"><label for="pool">Swimming pool</label>
+                    <label for="pool"><input class="activities" id="pool" type="checkbox" name="activity" value="pool"> Swimming pool</label>
 
-                    <input class="activities" id="nutrition" type="checkbox" name="activity" value="nutrition"><label>Dietitian</label>
+                    <label><input class="activities" id="nutrition" type="checkbox" name="activity" value="nutrition"> Dietitian</label>
 
-                    <input class="activities" id="spa" type="checkbox" name="activity" value="spa"><label for="spa">Day spa</label>
+                    <label for="spa"><input class="activities" id="spa" type="checkbox" name="activity" value="spa"> Day spa</label>
                 </div>
             </div>
             </fieldset>
 
                     <!-- Activity level section -->
 
-                    <label id="number-label">How many days per week do you exercise:</label>
+                    <label for="number" id="number-label">How many days per week do you exercise:</label>
                     <input type="number" name="days" id="number" min="0" max="7" placeholder="Choose 0 to 7" required>
 
 
                     <!-- Special Population section -->
 
                     <div class="special">
-                    <label id="special-label">Our clubs can provide customized programs for people with special
+                    <label for="special" id="special-label">Our clubs can provide customized programs for people with special
                         conditions or disabilities. If you are
                         interested to book a free consultation, describe briefly your special circumstances below and one of our team members will get in touch: 
-                        <textarea type="text" name="special" id="special" rows="4"></textarea> 
+                        <textarea type="text" name="special" id="special" rows="4" placeholder="I would like to book a free consultation to discuss..."></textarea> 
                     </label>
                     </div>
 
                     <!-- Next of kin section -->
 
                     <label id="nextofkin-label">Next of kin information:</label>
-                    Full name:
-                    <input type="text" name="kin-name" placeholder="Next of kin first and last name" required>
-                    Phone-number:
+                    <label for="kin" >Full name: <input type="text" id="kin" name="kin-name" placeholder="Next of kin first and last name" required></label>
+                    
+                    <label for="kin-numbe">Phone-number:
                     <input type="tel" name="kin-phone" id="kin-number"
-                        placeholder="Next of kin phone number" required>
-                    Address:
-                    <input type="text" name="kin-address" placeholder="Next of kin address" required>
+                        placeholder="Next of kin phone number" required></label>
+                    <label for="kin-address">Address:
+                    <input type="text" name="kin-address" placeholder="Next of kin address" required></label>
 
                     <!-- Terms & Conditions section -->
 
                     <div class="tcs">
-                    <input type="checkbox" name="terms" value="t&cs" id="tcs-label" required>
-                    <label for="tcs-label">I have read and I agree with the <a href="#">Terms and Conditions</a> of
+                    
+                    <label for="tcs-label"><input type="checkbox" name="terms" value="t&cs" id="tcs-label" required> I have read and I agree with the <a href="#">Terms and Conditions</a> of
                         Marvel Fitness.</label>
         
                     
