@@ -9,7 +9,7 @@
   *,
   ::before,
   ::after {
-    box-sizing: inherit; /* Tells all other elements and pseudo-elements to inherit their box sizing */             
+    box-sizing: inherit; /* Tells all other elements and pseudo-elements to inherit their box sizing */            
   }
 
   html {
